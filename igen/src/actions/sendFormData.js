@@ -6,11 +6,9 @@ const sendFormData = async ({ title, option, description, file }) => {
   formData.append('title', title);
   formData.append('description', description);
   try {
-    console.log(
-      await axios.post('https://localhost:3000/', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      })
-    );
+    await axios.post('https://localhost:3001/', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    });
   } catch (err) {
     console.log(err);
   }
