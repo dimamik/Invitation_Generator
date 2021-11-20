@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import InputLabel from '@mui/material/InputLabel';
@@ -7,10 +6,9 @@ import FormControl from '@mui/material/FormControl';
 
 const types = ['Birthday', 'Marriage', 'New Year', 'Christmas'];
 
-const Option = () => {
-  const [age, setAge] = useState('');
+const Option = ({ option, setOption }) => {
   const handleChange = (event) => {
-    setAge(event.target.value);
+    setOption(event.target.value);
   };
 
   return (
@@ -20,7 +18,7 @@ const Option = () => {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={age}
+          value={option}
           label="Invitation Theme"
           onChange={handleChange}
         >
