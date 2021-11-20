@@ -1,12 +1,19 @@
+import { textAlign } from '@mui/system';
 import styled from 'styled-components';
 
-const Div = styled.div`
-  display: flex;
-  justify-content: space-around;
-`;
+import { StyledH1, SuccessContent, Container,SuccessP} from '../styles/StyledComponents';
+
+
 
 const Success = () => {
-  return <Div onClick={() => console.log('Hello')}>Hello from Success</Div>
+  return <>
+    <Container>
+      <SuccessContent>
+        <StyledH1>Thank You!</StyledH1>
+        <SuccessP>Your invitation has been send <span>❤</span></SuccessP>
+      </SuccessContent>
+    </Container>
+  </>
 }
 
 export default Success;

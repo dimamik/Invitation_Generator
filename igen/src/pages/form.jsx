@@ -21,27 +21,6 @@ const Title = styled.h1`
   font-size: 132px;
 `;
 
-<<<<<<< HEAD
-  console.log(title);
-  return (
-<>
-      <h1>Create your Invitation!</h1>
-      <Box
-      component="form"
-      sx={{
-        '& > :not(style)': { m: 1, width: '25ch' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <UserInput label="Title" title={title} setTitle={setTitle}/>
-      <Option/>
-      <UserInput label="Descr" descr={descr} setDescr={setDescr} />
-      <FileChooser/>
-      </Box></>
-  )
-}
-=======
 const Box = styled.div`
   display: grid;
   grid-gap: 1em;
@@ -69,6 +48,5 @@ const Form = () => {
     </Container>
   );
 };
->>>>>>> c3ec232e92b3830bd7d8c9e10c03f7836d4c32bd
 
 export default Form;
