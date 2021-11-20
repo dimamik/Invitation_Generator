@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {StyledH1} from "../styles/StyledComponents";
 
 const Div = styled.div`
   display: flex;
@@ -6,7 +7,11 @@ const Div = styled.div`
 `;
 
 const Home = () => {
-    return <>Hello from Home</>
+    return <>
+        <StyledH1>
+            Hello there!
+        </StyledH1>
+    </>
 }
 
 export default Home;
