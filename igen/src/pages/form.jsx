@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Option from '../components/options.component';
 import UserInput from '../components/user-input.component';
 import FileChooser from '../components/file-chooser.component';
+import Buttons from '../components/buttons';
 
 const Container = styled.div`
   height: 80%;
@@ -44,6 +45,7 @@ const Form = () => {
           setTitle={setDescription}
         />
         <FileChooser file={file} setFile={setFile} />
+        <Buttons file={file} title={title} description={description} />
       </Box>
     </Container>
   );
