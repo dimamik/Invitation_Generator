@@ -1,16 +1,18 @@
+import React from 'react'
 import { useState } from "react";
 import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 
-import Buttons from './components/buttons.component'
+import Option from '../components/options.component'
+import UserInput from '../components/user-input.component'
+import FileChooser from '../components/file-chooser.component'
 
-const Home = () => {
+const Form = () => {
   const [title, setTitle] = useState('');
   const [descr, setDescr] = useState('');
-  const [state, setState] = useState({ title: '', types: [], descr: '', colors: {} })
+
 
   return (
-    <div className="container">
+<>
       <h1>Create your Invitation!</h1>
       <Box
       component="form"
@@ -20,21 +22,12 @@ const Home = () => {
       noValidate
       autoComplete="off"
     >
-      <TextField label="Title" value={title} setValue={setTitle} />
-      <Buttons />
-      <TextField label="Descr" value={descr} setValue={setDescr} />
-      </Box></div>
-
-
-
-{/* <TextField
-  id="outlined-name"
-  label="Name"
-  value={name}
-  onChange={handleChange}
-/>
-</Box>
-  ) */}
+      <UserInput label="Title" title={title} setTitle={setTitle}/>
+      <Option/>
+      <UserInput label="Descr" title={descr} setTitle={setDescr} />
+      <FileChooser/>
+      </Box></>
+  )
 }
 
-export default Home;
+export default Form;
