@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Success from '../pages/success';
 import { GlobalStyles } from '../styles/GlobalStyles';
 import Home from '../pages/home';
+import Form from '../pages/form';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/form" element={<>Hello from /form</>} />
+          <Route path="/form" element={<Form />} />
           <Route path="/success" element={<Success />} />
         </Routes>
       </BrowserRouter>
