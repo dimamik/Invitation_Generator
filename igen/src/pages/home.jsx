@@ -1,7 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import {StyledH1} from "../styles/StyledComponents";
-
 
 const Container = styled.div`
   height: 80%;
