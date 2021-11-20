@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-import {Container, Img, Content, Title, Button} from '../styles/StyledComponents'
+import { Container, Img, Content, Title, Button } from '../styles/StyledComponents'
 
 const Home = () => {
   const navigate = useNavigate();

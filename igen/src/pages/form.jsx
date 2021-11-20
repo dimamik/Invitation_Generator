@@ -32,13 +32,14 @@ const Form = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [file, setFile] = useState(new File([], ''));
+  const [option, setOption] = useState('');
   console.log(file);
   return (
     <Container>
       <Title>Invitation Generator</Title>
       <Box>
         <UserInput label="Title" title={title} setTitle={setTitle} />
-        <Option />
+        <Option option={option} setOption={setOption} />
         <UserInput
           label="Description"
           title={description}
