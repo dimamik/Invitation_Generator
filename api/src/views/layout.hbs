@@ -2,9 +2,91 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='./style.css' />
   </head>
+  <style>
+    html, body{
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      height: 250px;
+      background-color: beige; 
+      /* background-image: url("/../../src/views/img.jpg"); */
+    }
+    .header {
+      background-color: beige;
+      width: 600px;
+      height: 150px;
+      position: relative;
+      text-align: center;
+      padding-top: 3%;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        color: {{color2}};
+    }
+    .dedicated {
+      position: absolute;
+      height: 200px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 20px;
+      color: {{color1}};
+    }
+    .background-div {
+      display: inline-block;
+      overflow: hidden;
+      position: absolute;
+      height: 350px;
+      width: 600px;
+      bottom: 0;
+    }
+    .background-div > img {
+      pointer-events: none;
+      position: absolute;
+      width: 600px;
+      height: 100%;
+      z-index: -2;
+    }
+    .shadow {
+      background-color: rgba(95, 95, 95, 0.671);
+      position: absolute;
+      height: 270px;
+      width: 600px;
+      bottom: 0;
+      z-index: -1;
+    }
+
+  </style>
   <body>
-    {{{body}}}
+
+    <div class="header">
+      <h1>Invitation for <b>{{category}}</b></h1>
+      <h4>Hala Tauron Arena 1.11.2011</h4>
+    </div>
+
+    <div class="background-div">
+      <img src={{photo}}>
+    </div>
+
+
+
+    <div class="footer">
+      <p>Pozdrawiam, Pan Gospodarz</p>
+      <p>Z fartem</p>
+    </div>
+     
+    <div class="dedicated">
+      <h7><i>{{person}}</i>, <br><br> otrzymujesz zaproszenie na koncert mojej ekipy deathmetalowej "Radosne robaczki". <br>Będzie ogień!</h4>
+    </div>
+
+    <div class="shadow"/>
+    
+{{!-- &#128293; --}}
+
   </body>
 </html>
