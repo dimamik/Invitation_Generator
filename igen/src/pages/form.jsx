@@ -10,7 +10,7 @@ const Form = () => {
   const [title, setTitle] = useState('');
   const [descr, setDescr] = useState('');
 
-
+  console.log(title);
   return (
 <>
       <h1>Create your Invitation!</h1>
@@ -24,7 +24,7 @@ const Form = () => {
     >
       <UserInput label="Title" title={title} setTitle={setTitle}/>
       <Option/>
-      <UserInput label="Descr" title={descr} setTitle={setDescr} />
+      <UserInput label="Descr" descr={descr} setDescr={setDescr} />
       <FileChooser/>
       </Box></>
   )
