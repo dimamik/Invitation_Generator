@@ -1,6 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+<<<<<<< HEAD
 import { keyframes } from 'styled-components'
+=======
+import {StyledH1} from "../styles/StyledComponents";
+>>>>>>> c3ec232e92b3830bd7d8c9e10c03f7836d4c32bd
 
 import envelope from '../assets/envelope.png'
 
@@ -21,6 +25,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
   justify-content: flex-end;
   margin: 0 0 80px 0;
 `;
@@ -86,6 +91,16 @@ width: max-content;
           animation-timing-function: ease-in-out;
           animation-iteration-count: 1;
           transition: all 350ms ease-out;
+=======
+  height: 200px;
+  width: 600px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+  transition: opacity 200ms;
+>>>>>>> c3ec232e92b3830bd7d8c9e10c03f7836d4c32bd
 `;
 
 const Title = styled.h1`

@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 import TextField from '@mui/material/TextField';
 
-const UserInput = ({title, setTitle}) => {
+const Field = styled(TextField)`
+  && { 
+    width: 100%;
+  }
+`
 
-  return (
-      <TextField label="Title" value={title} setValue={setTitle}/>
-  )
-}
+const UserInput = ({ title, setTitle }) => {
+  return <Field label="Title" value={title} onChange={(e) => setTitle(e.target.value)} />;
+};
 
 export default UserInput;
