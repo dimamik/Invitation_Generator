@@ -25,6 +25,7 @@ const Button = styled.div`
   &:hover {
     opacity: 0.7;
   }
+  transition: opacity 200ms;
 `;
 
 const Title = styled.h1`
